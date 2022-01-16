@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="16919" started-at="2021-11-03T18:24:27 BDT" finished-at="2021-11-03T18:24:43 BDT">
+    <groups>
+    </groups>
+    <test name="C:/Users/LENOVO/IdeaProjects/reqres-api" duration-ms="16919" started-at="2021-11-03T18:24:27 BDT" finished-at="2021-11-03T18:24:43 BDT">
+      <class name="users.delete_user">
+        <test-method status="PASS" signature="delete_user()[pri:0, instance:users.delete_user@3bfdc050]" name="delete_user" duration-ms="486" started-at="2021-11-03T18:24:41 BDT" finished-at="2021-11-03T18:24:42 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_user -->
+      </class> <!-- users.delete_user -->
+      <class name="users.create_user">
+        <test-method status="PASS" signature="create_new_user()[pri:0, instance:users.create_user@42d80b78]" name="create_new_user" duration-ms="548" started-at="2021-11-03T18:24:41 BDT" finished-at="2021-11-03T18:24:41 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_new_user -->
+      </class> <!-- users.create_user -->
+      <class name="user_list.user_list">
+        <test-method status="PASS" signature="user_list()[pri:0, instance:user_list.user_list@77caeb3e]" name="user_list" duration-ms="1625" started-at="2021-11-03T18:24:39 BDT" finished-at="2021-11-03T18:24:41 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_list -->
+      </class> <!-- user_list.user_list -->
+      <class name="signin.SignInFunctionality">
+        <test-method status="PASS" signature="valid_signIn()[pri:0, instance:signin.SignInFunctionality@66a3ffec]" name="valid_signIn" duration-ms="505" started-at="2021-11-03T18:24:37 BDT" finished-at="2021-11-03T18:24:37 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_signIn -->
+        <test-method status="PASS" signature="signIn_onlyEmail()[pri:0, instance:signin.SignInFunctionality@66a3ffec]" name="signIn_onlyEmail" duration-ms="1816" started-at="2021-11-03T18:24:37 BDT" finished-at="2021-11-03T18:24:39 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_onlyEmail -->
+      </class> <!-- signin.SignInFunctionality -->
+      <class name="users.update_user">
+        <test-method status="PASS" signature="update_user()[pri:0, instance:users.update_user@1bce4f0a]" name="update_user" duration-ms="1890" started-at="2021-11-03T18:24:42 BDT" finished-at="2021-11-03T18:24:43 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_user -->
+      </class> <!-- users.update_user -->
+      <class name="registration.registration_functionality">
+        <test-method status="PASS" signature="valid_signup()[pri:0, instance:registration.registration_functionality@5b275dab]" name="valid_signup" duration-ms="6989" started-at="2021-11-03T18:24:27 BDT" finished-at="2021-11-03T18:24:34 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_signup -->
+        <test-method status="PASS" signature="wrong_credential()[pri:0, instance:registration.registration_functionality@5b275dab]" name="wrong_credential" duration-ms="504" started-at="2021-11-03T18:24:34 BDT" finished-at="2021-11-03T18:24:34 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrong_credential -->
+        <test-method status="PASS" signature="invalid_signup()[pri:0, instance:registration.registration_functionality@5b275dab]" name="invalid_signup" duration-ms="1909" started-at="2021-11-03T18:24:34 BDT" finished-at="2021-11-03T18:24:36 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_signup -->
+        <test-method status="PASS" signature="signup_onlyPassword()[pri:0, instance:registration.registration_functionality@5b275dab]" name="signup_onlyPassword" duration-ms="507" started-at="2021-11-03T18:24:36 BDT" finished-at="2021-11-03T18:24:37 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup_onlyPassword -->
+      </class> <!-- registration.registration_functionality -->
+    </test> <!-- C:/Users/LENOVO/IdeaProjects/reqres-api -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

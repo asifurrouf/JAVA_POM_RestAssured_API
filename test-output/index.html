@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Test_Suite">
+              <span class="suite-name border-passed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Test_Suite">
+                    <span>C:\Users\LENOVO\IdeaProjects\reqres-api\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="users.create_user" hash-for-method="create_new_user">create_new_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="users.delete_user" hash-for-method="delete_user">delete_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="registration.registration_functionality" hash-for-method="invalid_signup">invalid_signup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="signin.SignInFunctionality" hash-for-method="signIn_onlyEmail">signIn_onlyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="registration.registration_functionality" hash-for-method="signup_onlyPassword">signup_onlyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="users.update_user" hash-for-method="update_user">update_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="user_list.user_list" hash-for-method="user_list">user_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="signin.SignInFunctionality" hash-for-method="valid_signIn">valid_signIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="registration.registration_functionality" hash-for-method="valid_signup">valid_signup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="registration.registration_functionality" hash-for-method="wrong_credential">wrong_credential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">registration.registration_functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalid_signup">
+                  </a> <!-- invalid_signup -->
+                  <span class="method-name">invalid_signup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signup_onlyPassword">
+                  </a> <!-- signup_onlyPassword -->
+                  <span class="method-name">signup_onlyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_signup">
+                  </a> <!-- valid_signup -->
+                  <span class="method-name">valid_signup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrong_credential">
+                  </a> <!-- wrong_credential -->
+                  <span class="method-name">wrong_credential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">users.update_user</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="update_user">
+                  </a> <!-- update_user -->
+                  <span class="method-name">update_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">user_list.user_list</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_list">
+                  </a> <!-- user_list -->
+                  <span class="method-name">user_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">signin.SignInFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_onlyEmail">
+                  </a> <!-- signIn_onlyEmail -->
+                  <span class="method-name">signIn_onlyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_signIn">
+                  </a> <!-- valid_signIn -->
+                  <span class="method-name">valid_signIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">users.delete_user</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_user">
+                  </a> <!-- delete_user -->
+                  <span class="method-name">delete_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">users.create_user</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_user">
+                  </a> <!-- create_new_user -->
+                  <span class="method-name">create_new_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\LENOVO\IdeaProjects\reqres-api\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;All Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;C:/Users/LENOVO/IdeaProjects/reqres-api&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;registration.registration_functionality&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;valid_signup&quot;/&gt;
+          &lt;include name=&quot;wrong_credential&quot;/&gt;
+          &lt;include name=&quot;invalid_signup&quot;/&gt;
+          &lt;include name=&quot;signup_onlyPassword&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- registration.registration_functionality --&gt;
+      &lt;class name=&quot;signin.SignInFunctionality&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;valid_signIn&quot;/&gt;
+          &lt;include name=&quot;signIn_onlyEmail&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- signin.SignInFunctionality --&gt;
+      &lt;class name=&quot;user_list.user_list&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;user_list&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- user_list.user_list --&gt;
+      &lt;class name=&quot;users.create_user&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;create_new_user&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- users.create_user --&gt;
+      &lt;class name=&quot;users.delete_user&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;delete_user&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- users.delete_user --&gt;
+      &lt;class name=&quot;users.update_user&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;update_user&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- users.update_user --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- C:/Users/LENOVO/IdeaProjects/reqres-api --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">C:/Users/LENOVO/IdeaProjects/reqres-api (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'valid_signup')
+data.setCell(0, 2, 'registration.registration_functionality')
+data.setCell(0, 3, 6989);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalid_signup')
+data.setCell(1, 2, 'registration.registration_functionality')
+data.setCell(1, 3, 1909);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'update_user')
+data.setCell(2, 2, 'users.update_user')
+data.setCell(2, 3, 1890);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'signIn_onlyEmail')
+data.setCell(3, 2, 'signin.SignInFunctionality')
+data.setCell(3, 3, 1816);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'user_list')
+data.setCell(4, 2, 'user_list.user_list')
+data.setCell(4, 3, 1625);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'create_new_user')
+data.setCell(5, 2, 'users.create_user')
+data.setCell(5, 3, 548);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'signup_onlyPassword')
+data.setCell(6, 2, 'registration.registration_functionality')
+data.setCell(6, 3, 507);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'valid_signIn')
+data.setCell(7, 2, 'signin.SignInFunctionality')
+data.setCell(7, 3, 505);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'wrong_credential')
+data.setCell(8, 2, 'registration.registration_functionality')
+data.setCell(8, 3, 504);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'delete_user')
+data.setCell(9, 2, 'users.delete_user')
+data.setCell(9, 3, 486);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">registration.registration_functionality</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">valid_signup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrong_credential</span>
+                <span class="method-start">6994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalid_signup</span>
+                <span class="method-start">7499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signup_onlyPassword</span>
+                <span class="method-start">9408 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">signin.SignInFunctionality</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">valid_signIn</span>
+                <span class="method-start">9920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signIn_onlyEmail</span>
+                <span class="method-start">10429 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">user_list.user_list</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">user_list</span>
+                <span class="method-start">12248 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">users.create_user</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_user</span>
+                <span class="method-start">13881 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">users.delete_user</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">delete_user</span>
+                <span class="method-start">14435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">users.update_user</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">update_user</span>
+                <span class="method-start">14922 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

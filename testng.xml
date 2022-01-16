@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/IdeaProjects/reqres-api">
+        <classes>
+            <class name="registration.registration_functionality">
+                <methods>
+                    <include name="valid_signup"/>
+                    <include name="wrong_credential"/>
+                    <include name="invalid_signup"/>
+                    <include name="signup_onlyPassword"/>
+                </methods>
+            </class>
+            <class name="signin.SignInFunctionality">
+                <methods>
+                    <include name="valid_signIn"/>
+                    <include name="signIn_onlyEmail"/>
+                </methods>
+            </class>
+            <class name="user_list.user_list">
+                <methods>
+                    <include name="user_list"/>
+                </methods>
+            </class>
+            <class name="users.create_user">
+                <methods>
+                    <include name="create_new_user"/>
+                </methods>
+            </class>
+            <class name="users.delete_user">
+                <methods>
+                    <include name="delete_user"/>
+                </methods>
+            </class>
+            <class name="users.update_user">
+                <methods>
+                    <include name="update_user"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
